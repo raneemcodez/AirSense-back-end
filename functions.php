@@ -132,7 +132,7 @@ function deleteFile($dir, $imagename)
 function checkAuthenticate()
 {
     if (isset($_SERVER['PHP_AUTH_USER'])  && isset($_SERVER['PHP_AUTH_PW'])) {
-        if ($_SERVER['PHP_AUTH_USER'] != "wael" ||  $_SERVER['PHP_AUTH_PW'] != "wael12345") {
+        if ($_SERVER['PHP_AUTH_USER'] != "raneem" ||  $_SERVER['PHP_AUTH_PW'] != "raneem1234") {
             header('WWW-Authenticate: Basic realm="My Realm"');
             header('HTTP/1.0 401 Unauthorized');
             echo 'Page Not Found';
@@ -164,7 +164,7 @@ function result($count){
 }
 
 function sendEmail($to , $title , $body){
-$header = "From: support@raneemalrefaie.com " . "\n" . "CC: raneemalrefaie602@gmail.com" ; 
+$header = "From: support@raneema.com " . "\n" . "CC: raneema12@gmail.com" ; 
 mail($to , $title , $body , $header) ; 
 
 }
